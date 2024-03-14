@@ -1,0 +1,50 @@
+apiVersion: v1
+entries:
+  nifi-cluster:
+  - apiVersion: v2
+    appVersion: 1.24.0
+    created: "2024-03-14T16:39:56.05970173Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.4.0
+    description: A Helm chart for deploying NiFi clusters in Kubernetes
+    digest: 394684c17cff5a16c4445823c829b52d504680a8ee1f853c7a2e1162a397f1ae
+    home: https://github.com/konpyutaika/nifikop
+    icon: https://konpyutaika.github.io/nifikop/img/nifikop.png
+    keywords:
+    - nifi
+    - nifikop
+    - data
+    - nifi-cluster
+    name: nifi-cluster
+    sources:
+    - https://github.com/konpyutaika/nifikop
+    type: application
+    urls:
+    - https://github.com/cbrendanprice/nifikop/releases/download/nifi-cluster-1.8.0/nifi-cluster-1.8.0.tgz
+    version: 1.8.0
+  nifikop:
+  - apiVersion: v1
+    appVersion: 1.8.0-release
+    created: "2024-03-14T16:39:56.173706078Z"
+    description: A Helm chart for NiFiKop - the Konpyūtāika NiFi Kubernetes operator
+    digest: 611af255fe65659dc27b2a3c298aff52c480ca1bc98fb8bc6cf37d839adbedcf
+    home: https://github.com/konpyutaika/nifikop
+    icon: https://konpyutaika.github.io/nifikop/img/nifikop.png
+    keywords:
+    - operator
+    - nifi
+    - nifikop
+    - data
+    maintainers:
+    - email: guittonalexandre@outlook.fr
+      name: erdrix
+    name: nifikop
+    sources:
+    - https://github.com/konpyutaika/nifikop
+    urls:
+    - https://github.com/cbrendanprice/nifikop/releases/download/nifikop-1.8.0/nifikop-1.8.0.tgz
+    version: 1.8.0
+generated: "2024-03-14T16:39:56.173710967Z"
