@@ -166,6 +166,7 @@ rules:
     - delete
 - apiGroups:
     - ""
+    - "coordination.k8s.io"
   resources:
     - events
   verbs:
