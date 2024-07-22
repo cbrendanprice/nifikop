@@ -2,6 +2,30 @@ apiVersion: v1
 entries:
   nifi-cluster:
   - apiVersion: v2
+    appVersion: 1.26.0
+    created: "2024-07-22T21:56:06.566964224Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.4.0
+    description: A Helm chart for deploying NiFi clusters in Kubernetes
+    digest: 34d81261f9fcd168ee61e70e04bd3d263192092d63abf4bf557fcde6689ab745
+    home: https://github.com/konpyutaika/nifikop
+    icon: https://konpyutaika.github.io/nifikop/img/nifikop.png
+    keywords:
+    - nifi
+    - nifikop
+    - data
+    - nifi-cluster
+    name: nifi-cluster
+    sources:
+    - https://github.com/konpyutaika/nifikop
+    type: application
+    urls:
+    - https://github.com/cbrendanprice/nifikop/releases/download/nifi-cluster-1.9.0/nifi-cluster-1.9.0.tgz
+    version: 1.9.0
+  - apiVersion: v2
     appVersion: 1.24.0
     created: "2024-03-17T21:59:20.968011018Z"
     dependencies:
@@ -51,6 +75,27 @@ entries:
     version: 1.8.0
   nifikop:
   - apiVersion: v1
+    appVersion: 1.9.0-release
+    created: "2024-07-22T21:56:06.68037365Z"
+    description: A Helm chart for NiFiKop - the Konpyūtāika NiFi Kubernetes operator
+    digest: fe2ec90525be41eca719d16dcda8f62ae7440a843b123a3f5cdf77d95428c868
+    home: https://github.com/konpyutaika/nifikop
+    icon: https://konpyutaika.github.io/nifikop/img/nifikop.png
+    keywords:
+    - operator
+    - nifi
+    - nifikop
+    - data
+    maintainers:
+    - email: guittonalexandre@outlook.fr
+      name: erdrix
+    name: nifikop
+    sources:
+    - https://github.com/konpyutaika/nifikop
+    urls:
+    - https://github.com/cbrendanprice/nifikop/releases/download/nifikop-1.9.0/nifikop-1.9.0.tgz
+    version: 1.9.0
+  - apiVersion: v1
     appVersion: 1.8.0-release
     created: "2024-03-14T16:39:56.173706078Z"
     description: A Helm chart for NiFiKop - the Konpyūtāika NiFi Kubernetes operator
@@ -71,4 +116,4 @@ entries:
     urls:
     - https://github.com/cbrendanprice/nifikop/releases/download/nifikop-1.8.0/nifikop-1.8.0.tgz
     version: 1.8.0
-generated: "2024-03-17T21:59:20.968025495Z"
+generated: "2024-07-22T21:56:06.680403194Z"
